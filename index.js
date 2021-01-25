@@ -8,7 +8,7 @@ function addToList() {
 let addedListItem = document.getElementById('addedListItem').value;
 let entry = document.createElement('li');
 entry.appendChild(document.createTextNode(addedListItem))
-entry.onclick= toggle;
+entry.onclick = toggle;
 list.appendChild(entry)
 
 }
@@ -28,9 +28,11 @@ function toggle() {
 
 if (event.target.classList.contains('strikethrough')) {
     event.target.className = 'strikethrough'
+    event.target.innerHTML += '✔'
 }
-// else {
-//     event.target.innerHTML = event.target.classList.replace('strikethrough', '')
-// }
+else {
+    event.target.innerHTML = event.target.innerHTML.replace('✔', '')
+ 
+}
 
 }

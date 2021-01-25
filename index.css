@@ -1,6 +1,14 @@
+body{
+    text-align: center;
+}
+
+
 .strikethrough{
     text-decoration: line-through;
 }
 .stillToDo{
     text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
