@@ -29,9 +29,11 @@ function toggle() {
 if (event.target.classList.contains('strikethrough')) {
     event.target.className = 'strikethrough'
     event.target.innerHTML += '✔'
+    event.target.style.setProperty('color', 'green')
 }
 else {
     event.target.innerHTML = event.target.innerHTML.replace('✔', '')
+    event.target.style.setProperty('color', 'red')
  
 }
 
